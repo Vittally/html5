@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.sectionWhite {
+  color: #333333;
+  padding: 50px;
+  position: relative;
+}
+.sectionWhite h2 {
+  color: #445161;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sectionWhite:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.sectionLight {
+  background-color: #f5f5f5;
+  color: #333333;
+  padding: 50px;
+  position: relative;
+}
+.sectionLight h2 {
+  color: #445161;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sectionLight:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.sectionDark {
+  background-color: #445161;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 50px;
+  position: relative;
+}
+.sectionDark h2 {
+  color: #445161;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sectionDark:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.colomn {
+  max-width: 0%;
+  float: left;
+}
+.product {
+  position: relative;
+  background-color: transparent;
+}
+.product .disc h1 {
+  font-size: 59px;
+  margin: -10px 0 20px;
+}
+.product .disc li {
+  font-size: 20px;
+  line-height: 1.8;
+}
+.product .presentVideo {
+  object-fit: cover;
+  height: 214px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.product .backVideo {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.about .disc {
+  max-width: -530%;
+  float: left;
+}
+.about .disc h2 {
+  text-align: left;
+}
+.about .disc p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.about video {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+}
+.pluses li {
+  margin-bottom: 35px;
+}
+@media (min-width: 967px) {
+  .pluses li {
+    width: 47%;
+    float: left;
+    margin-right: 20px;
+  }
+}
+.shots .scrshots {
+  margin-bottom: 30px;
+  width: 100%;
+}
+@media (min-width: 967px) {
+  .shots .scrshots {
+    margin-top: 0;
+    width: 50%;
+  }
+  .shots .scrshots h3 {
+    margin-top: 0;
+  }
+}
+.shots .scrshot {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  object-fit: contain;
+}
+@media (min-width: 967px) {
+  .shots .scrshot {
+    width: 40%;
+    height: 100%;
+    float: left;
+  }
+}
+.shots h3 {
+  font-size: 24px;
+}
+.reviews blockquote {
+  /*overflow: hidden;*/
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  line-height: 1.29;
+  background-color: #ebebeb;
+  padding: 16px 20px;
+  position: relative;
+}
+.reviews blockquote p {
+  font-style: italic;
+}
+.reviews blockquote footer {
+  color: #989898;
+}
+.reviews blockquote .square {
+  width: 20px;
+  height: 20px;
+  background-color: #ebebeb;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -10px;
+  top: 27px;
+}
+.reviews .avatar {
+  width: 75px;
+  height: 75px;
+  margin: 0 23px 0 10px;
+  background-color: #445161;
+  border: 1px;
+  border-radius: 50%;
+  float: left;
+}
+.buy {
+  height: 656px;
+}
+.buy .cards {
+  display: flex;
+  align-items: flex-end;
+}
+.buy .card {
+  float: left;
+  width: 100%;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #445161;
+  color: white;
+}
+.buy .card h3 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 17px;
+}
+.buy .card h4 {
+  padding: 18px 0;
+  margin: 0 -20px;
+  text-align: center;
+  background-color: white;
+  color: #445161;
+  font-size: 40px;
+  line-height: 0.75;
+}
+.buy .card ol {
+  padding-top: 10px;
+}
+.buy .card li {
+  margin-left: 24px;
+}
+.buy .card button {
+  height: 40px;
+  border-radius: 5px;
+  color: #445161;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contacts {
+  height: 510px;
+}
+.contacts h3 {
+  text-align: center;
+}
+.contacts form {
+  margin-left: 250px;
+  float: left;
+  overflow: hidden;
+}
+.contacts input,
+.contacts textarea {
+  width: 500px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  margin: 21px 0;
+}
+.contacts input[type=submit] {
+  width: 140px;
+  margin-left: 180px;
+}
+.contacts .social {
+  float: left;
+  margin: 15px 0 0 45px;
+  line-height: 1.5;
+}
+.contacts .social li {
+  margin-bottom: 18px;
+}
+.contacts .social li a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=stile.css.map */
