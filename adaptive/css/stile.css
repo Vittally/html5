@@ -7,6 +7,12 @@ html {
   margin: 0 auto;
   font-size: 16px;
 }
+h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
 .sectionWhite {
   color: #333333;
   padding: 50px;
@@ -14,10 +20,6 @@ html {
 }
 .sectionWhite h2 {
   color: #445161;
-  font-size: 30px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 30px;
 }
 .sectionWhite:after {
   clear: both;
@@ -32,10 +34,6 @@ html {
 }
 .sectionLight h2 {
   color: #445161;
-  font-size: 30px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 30px;
 }
 .sectionLight:after {
   clear: both;
@@ -46,16 +44,11 @@ html {
   background-color: #445161;
   color: #ffffff;
   font-size: 20px;
-  line-height: 1.2;
   padding: 50px;
   position: relative;
 }
 .sectionDark h2 {
   color: #445161;
-  font-size: 30px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 30px;
 }
 .sectionDark:after {
   clear: both;
@@ -94,8 +87,8 @@ html {
   z-index: -1;
 }
 .about .disc {
-  max-width: -530%;
   float: left;
+  overflow: hidden;
 }
 .about .disc h2 {
   text-align: left;
@@ -104,58 +97,58 @@ html {
   font-size: 16px;
   line-height: 1.5;
 }
-.about video {
-  width: 100%;
+.about .dics:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.about .video {
   height: 245px;
   object-fit: cover;
+  overflow: hidden;
 }
 .pluses li {
   margin-bottom: 35px;
+  padding: 0 5px;
+  float: left;
 }
-@media (min-width: 967px) {
-  .pluses li {
-    width: 47%;
-    float: left;
-    margin-right: 20px;
-  }
+.shots {
+  /*@media (min-width: 967px) {
+    .scrshots {
+      margin-top: 0;
+      width: 50%;
+      h3 {
+        margin-top: 0;
+      }
+    }
+  }*/
 }
 .shots .scrshots {
   margin-bottom: 30px;
-  width: 100%;
-}
-@media (min-width: 967px) {
-  .shots .scrshots {
-    margin-top: 0;
-    width: 50%;
-  }
-  .shots .scrshots h3 {
-    margin-top: 0;
-  }
+  float: left;
 }
 .shots .scrshot {
   width: 100%;
-  height: 100%;
-  margin-right: 10px;
   object-fit: contain;
 }
 @media (min-width: 967px) {
   .shots .scrshot {
+    margin-right: 10px;
     width: 40%;
-    height: 100%;
     float: left;
   }
-}
-.shots h3 {
-  font-size: 24px;
+  .shots h3 {
+    font-size: 24px;
+    margin-top: -5px;
+  }
 }
 .reviews blockquote {
   /*overflow: hidden;*/
-  width: 100%;
-  float: left;
   font-size: 14px;
   line-height: 1.29;
   background-color: #ebebeb;
   padding: 16px 20px;
+  border: 0;
   position: relative;
 }
 .reviews blockquote p {
@@ -170,32 +163,46 @@ html {
   background-color: #ebebeb;
   transform: rotate(45deg);
   position: absolute;
-  left: -10px;
-  top: 27px;
+  left: 35px;
+  top: -11px;
+  z-index: 1;
 }
 .reviews .avatar {
   width: 75px;
   height: 75px;
-  margin: 0 23px 0 10px;
+  margin: 0 23px 23px 10px;
   background-color: #445161;
   border: 1px;
   border-radius: 50%;
-  float: left;
 }
-.buy {
-  height: 656px;
+@media (min-width: 967px) {
+  .reviews blockquote {
+    margin-left: 100px;
+  }
+  .reviews blockquote .square {
+    left: -10px;
+    top: 27px;
+  }
+  .reviews .avatar {
+    float: left;
+    overflow: hidden;
+  }
 }
-.buy .cards {
-  display: flex;
-  align-items: flex-end;
+@media (min-width: 967px) {
+  .buy .cards {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .buy .card {
   float: left;
   width: 100%;
-  margin: 0 20px;
+  margin: 10px 20px;
   padding: 20px;
   background-color: #445161;
   color: white;
+  border: solid 2px #445161;
+  border-radius: 5px;
 }
 .buy .card h3 {
   text-align: center;
@@ -219,28 +226,35 @@ html {
   margin-left: 24px;
 }
 .buy .card button {
-  height: 40px;
   border-radius: 5px;
   color: #445161;
+  background-color: white;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-}
-.contacts {
-  height: 510px;
+  padding: 5px 30px;
 }
 .contacts h3 {
   text-align: center;
 }
+.contacts a {
+  text-decoration: none;
+  color: white;
+}
 .contacts form {
-  margin-left: 250px;
-  float: left;
-  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 967px) {
+  .contacts form {
+    margin-left: 20%;
+    float: left;
+    width: 80%;
+  }
 }
 .contacts input,
 .contacts textarea {
-  width: 500px;
+  width: 100%;
   padding: 10px 14px;
   border-radius: 5px;
   border: none;
@@ -248,19 +262,20 @@ html {
   margin: 21px 0;
 }
 .contacts input[type=submit] {
-  width: 140px;
-  margin-left: 180px;
+  margin: 0 auto;
+  color: #445161;
+  background-color: white;
 }
-.contacts .social {
+.contacts .contactUs {
   float: left;
-  margin: 15px 0 0 45px;
+  margin: 15px 0 0 0;
   line-height: 1.5;
 }
-.contacts .social li {
+.contacts .contactUs li {
   margin-bottom: 18px;
 }
-.contacts .social li a {
-  text-decoration: none;
-  color: white;
+.contacts .social {
+  margin: 15px 15px;
+  letter-spacing: 10px;
 }
 /*# sourceMappingURL=stile.css.map */
