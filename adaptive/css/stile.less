@@ -73,7 +73,6 @@ h2 {
 }
 
 .product {
-  //height: 323px;
   position: relative;
   background-color: transparent;
   .disc {
@@ -84,27 +83,15 @@ h2 {
     li {
       font-size: 20px;
       line-height: 1.8;
-      //margin-left: -15px;
     }
-    //float: left;
   }
   .presentVideo {
     object-fit: cover;
-    //width: 100%;
     height: 214px;
     overflow: hidden;
     margin-top: 10px;
-    //position: absolute;
-    //top: 50px;
-    //left: 761px;
-    //float: left;
   }
-  //@media (min-width: 767px) {
-  //  .presentVideo {
-  //    width: 50%;
-  //float: none;
-  //  }
-  //}
+
   .backVideo {
     object-fit: fill;
     width: 100%;
@@ -117,9 +104,7 @@ h2 {
 }
 
 .about {
-  //height: 345px;
   .disc {
-    //max-width: @widthAll - @sectionPadding*2 - 100px - 430px;
     float: left;
     h2 {
       text-align: left;
@@ -136,7 +121,6 @@ h2 {
     display: block;
   }
   .video {
-    //width: 100%;
     height: 245px;
     object-fit: cover;
     overflow: hidden;
@@ -144,7 +128,6 @@ h2 {
 }
 
 .pluses {
-  //height: 444px;
   li {
     margin-bottom: 35px;
     padding: 0 5px;
@@ -153,25 +136,16 @@ h2 {
 }
 
 .shots {
-  //height: 520px;
   .scrshots {
     margin-bottom: 30px;
     float: left;
   }
-  /*@media (min-width: 967px) {
-    .scrshots {
-      margin-top: 0;
-      width: 50%;
-      h3 {
-        margin-top: 0;
-      }
-    }
-  }*/
+
   .scrshot {
     width: 100%;
     object-fit: contain;
   }
-  @media (min-width: 967px) {
+  @media (min-width: 991px) {
     .scrshot {
       margin-right: 10px;
       width: 40%;
@@ -186,10 +160,7 @@ h2 {
 }
 
 .reviews {
-  //height: 454px;
   blockquote {
-    /*overflow: hidden;*/
-    //width: 100%;
     font-size: 14px;
     line-height: 1.29;
     background-color: #ebebeb;
@@ -221,10 +192,9 @@ h2 {
     border: 1px;
     border-radius: 50%;
   }
-  @media (min-width: 967px) {
+  @media (min-width: 991px) {
     blockquote {
       margin-left: 100px;
-      //overflow: hidden;
       .square {
         left: -10px;
         top: 27px;
@@ -239,8 +209,7 @@ h2 {
 }
 
 .buy {
-  //height: 656px;
-  @media (min-width: 967px) {
+  @media (min-width: 991px) {
     .cards {
       display: flex;
       align-items: flex-end;
@@ -278,7 +247,8 @@ h2 {
       margin-left: 24px;
     }
     button {
-      //height: 40px;
+      text-align: center;
+      width: 100%;
       border-radius: 5px;
       color: #445161;
       background-color: white;
@@ -292,7 +262,6 @@ h2 {
 }
 
 .contacts {
-  //height: 510px;
   h3 {
     text-align: center;
   }
@@ -302,18 +271,15 @@ h2 {
   }
   form {
     width: 100%;
-    //overflow: hidden;
   }
-  @media (min-width: 967px) {
+  @media (min-width: 991px) {
     form {
       margin-left: 20%;
       float: left;
       width: 80%;
-      //overflow: hidden;
     }
   }
   input, textarea {
-    //width: 500px;
     width: 100%;
     padding: 10px 14px;
     border-radius: 5px;
@@ -322,7 +288,6 @@ h2 {
     margin: 21px 0;
   }
   input[type=submit] {
-    //width: 140px;
     margin: 0 auto;
     color: #445161;
     background-color: white;
